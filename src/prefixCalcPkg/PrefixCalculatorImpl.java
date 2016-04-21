@@ -3,18 +3,17 @@ package prefixCalcPkg;
 import java.util.Scanner;
 
 
-public class PrefixCalculatorImpl implements Calculator {
-
+public class PrefixCalculatorImpl implements Calculator 
+{
 	@Override
-	public Number calculate(String expression) {
-
+	public Number calculate(String expression) 
+	{
 		ExpressionTree calc;
-
 		double result=0;
 
 		if ( expression.length() > 0 )
 		{
-			System.out.println ("Processing string " + expression);
+			System.out.println ("Input string " + expression);
 
 			String inStr = expression;
 
@@ -24,9 +23,9 @@ public class PrefixCalculatorImpl implements Calculator {
 
 			calc = new ExpressionTree(new Scanner(inStr));
 
-			System.out.println ("\nInput as prefix expression:");
+			System.out.println ("\nInput string as prefix expression:");
 			calc.showPreFix();
-			//System.out.println ("\nValue: " + calc.evaluate());
+
 			result=calc.evaluate();
 		}
 		return result;
