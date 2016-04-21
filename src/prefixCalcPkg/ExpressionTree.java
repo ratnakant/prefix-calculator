@@ -59,26 +59,6 @@ public class ExpressionTree
 		}
 		return node;
 	}
-	
-	/**
-	 * Show the expression tree as a prefix expression.
-	 * All the work is done in the private recursive method.
-	 */
-	public void showPreFix ()
-	{
-		showPreFix ( root );
-		System.out.println();
-	}
-	// Prefix expression is the result of a pre-order traversal
-	private void showPreFix ( TreeNode node )
-	{ // NOTE: removing tail recursion
-		while ( node != null )
-		{
-			System.out.print ( node + " " );
-			showPreFix ( node.left );
-			node = node.right; // Update parameter for right traversal
-		}
-	}
 
 	
 	/**

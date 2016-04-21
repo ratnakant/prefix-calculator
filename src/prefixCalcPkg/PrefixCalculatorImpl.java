@@ -23,9 +23,6 @@ public class PrefixCalculatorImpl implements Calculator
 
 			calc = new ExpressionTree(new Scanner(inStr));
 
-			System.out.println ("\nInput string as prefix expression:");
-			calc.showPreFix();
-
 			result=calc.evaluate();
 		}
 		return result;
