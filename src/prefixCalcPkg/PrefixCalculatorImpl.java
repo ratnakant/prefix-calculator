@@ -7,7 +7,6 @@ public class PrefixCalculatorImpl implements Calculator {
 
 	@Override
 	public Number calculate(String expression) {
-		// TODO Auto-generated method stub
 
 		ExpressionTree calc;
 
