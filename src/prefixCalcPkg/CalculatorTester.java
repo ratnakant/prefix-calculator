@@ -3,7 +3,7 @@ package prefixCalcPkg;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class CalculatorTester {
+public class CalculatorTester{
 	
 	private static final String TEST_EXPRESSION_ONE = "(* (+ 2 3) (- 10 6))";
 

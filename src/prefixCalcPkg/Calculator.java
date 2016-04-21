@@ -1,5 +1,5 @@
 package prefixCalcPkg;
 
-public interface Calculator { Number calculate(String expression);
+public interface Calculator {
+	Number calculate(String expression);
 }
-

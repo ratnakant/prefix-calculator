@@ -2,16 +2,19 @@ package prefixCalcPkg;
 
 import java.util.Scanner;
 
-public class PrefixCalculatorImpl implements Calculator 
-{
-	@Override
-	public Number calculate(String expression) 
-	{
+public class PrefixCalculatorImpl implements Calculator{
+	
+	/**
+	 * Calculate the result of input expression by building
+	 * corresponding binary expression tree.
+	 * @param input expression
+	 * @return result of the expression evaluation
+	 */
+	public Number calculate(String expression){
 		ExpressionTree calc;
 		double result=0;
 
-		if ( expression.length() > 0 )
-		{
+		if (expression.length() > 0){
 			String inStr = expression;
 			
 			//Remove parenthesis from the input string
