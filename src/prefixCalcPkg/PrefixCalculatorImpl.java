@@ -2,7 +2,6 @@ package prefixCalcPkg;
 
 import java.util.Scanner;
 
-
 public class PrefixCalculatorImpl implements Calculator 
 {
 	@Override
@@ -13,10 +12,9 @@ public class PrefixCalculatorImpl implements Calculator
 
 		if ( expression.length() > 0 )
 		{
-			System.out.println ("Input string " + expression);
-
 			String inStr = expression;
-
+			
+			//Remove parenthesis from the input string
 			if (!inStr.isEmpty()){
 				inStr = inStr.replaceAll("[\\p{Ps}\\p{Pe}]", "");
 			}
